@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.form__input {
+  padding: 16px;
+}
+
+/*# sourceMappingURL=form.css.map */

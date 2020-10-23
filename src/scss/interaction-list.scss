@@ -1,0 +1,22 @@
+.interaction-list {
+  list-style-type: none;
+  display: none;
+  padding: 0;
+  height: 40px;
+
+  &__item + &__item {
+    margin-left: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

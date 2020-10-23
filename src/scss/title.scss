@@ -1,0 +1,30 @@
+.title {
+
+  &__text::before {
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    margin-left: -16px;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+
+    @media (min-width: 768px) {
+      margin-left: -24px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-left: -32px;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+}

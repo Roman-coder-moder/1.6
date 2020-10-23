@@ -1,0 +1,22 @@
+.overlay {
+  width: 100%;
+  height: 250%;
+
+  &--on {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    filter: opacity(.85);
+  }
+
+  &--menu {
+    z-index: 15;
+  }
+
+  &--modal {
+    z-index: 25;
+  }
+}

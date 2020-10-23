@@ -1,3 +1,6 @@
 import '../scss/style.scss';
 
-console.log('Works!');
+import './show-more';
+import './swiper';
+import './menu';
+import './modal';

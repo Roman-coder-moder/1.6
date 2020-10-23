@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 16px 32px;
+
+  &__input {
+    padding: 4px 8px;
+    margin-bottom: 16px;
+    width: 376px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+  }
+
+  &__message {
+    min-height: 118px;
+  }
+
+  &__info {
+    margin-bottom: 24px;
+
+    &--red {
+      color: red;
+    }
+  }
+
+  &__close-btn {
+    align-self: flex-end;
+  }
+}

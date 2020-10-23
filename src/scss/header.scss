@@ -1,0 +1,67 @@
+.header {
+  height: 88px;
+  background-color: white;
+  border-bottom: 1px solid #D9FFF5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 24px;
+  }
+
+  @media (min-width: 1440px) {
+    display: contents;
+  }
+
+  header > * {
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__menu-btn {
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    margin-left: 20px;
+
+    @media (min-width: 768px) {
+      margin-left: 43px;
+    }
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__logo::before {
+    content: "";
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    position: absolute;
+    margin: 10px 0 10px 110px;
+
+    @media (min-width: 768px) {
+      margin: 10px 0 10px -20px;
+    }
+  }
+
+  &__order-list {
+    margin: 0 0 0 auto;
+    z-index: 10;
+
+    @media (min-width: 1440px) {
+      display: flex;
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      margin-left: 0;
+    }
+  }
+}

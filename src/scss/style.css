@@ -563,7 +563,7 @@ p + p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
@@ -1627,7 +1627,7 @@ button.swiper-pagination-bullet {
 }
 @media (min-width: 1440px) {
   .menu {
-    height: 920px;
+    height: 100vh;
     visibility: visible;
     position: fixed;
     display: flex;

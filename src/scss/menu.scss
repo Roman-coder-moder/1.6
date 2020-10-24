@@ -18,7 +18,7 @@
   }
 
   @media (min-width: 1440px) {
-    height: 920px;
+    height: 100vh;
     visibility: visible;
     position: fixed;
     display: flex;
@@ -84,7 +84,7 @@
     @media (min-width: 1440px) {
       display: flex;
       left: 0;
-      top: 720px;
+      top: calc(100vh - 200px);
     }
   }
 

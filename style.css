@@ -86,7 +86,7 @@
   box-sizing: border-box; }
 
 .body {
-  font-family: "TT Lakes", serif;
+  font-family: "TT Lakes", "Times New Roman", sans-serif;
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -159,8 +159,9 @@ p + p {
       right: 8px;
       bottom: 8px; }
   .button:hover {
-    opacity: 0.7;
-    transition: opacity 0.3s; }
+    transform: translate(2px, -2px);
+    box-shadow: -2px 2px 0 0 #FF3E79;
+    transition: all 0.2s; }
 
 .device-brands__list {
   padding: 16px;
@@ -316,6 +317,7 @@ p + p {
         text-align: right; } }
   .footer__link {
     color: inherit;
+    text-decoration: none;
     cursor: pointer; }
     .footer__link:hover {
       opacity: 0.6; }
@@ -427,6 +429,14 @@ p + p {
     @media (min-width: 1120px) {
       .main__title {
         padding: 0 32px; } }
+    .main__title::before {
+      content: "";
+      width: 4px;
+      height: 40px;
+      background-color: #41F6D7;
+      left: 0;
+      border-radius: 0 4px 4px 0;
+      position: absolute; }
   .main__nav {
     padding: 0 16px; }
     @media (min-width: 768px) {
@@ -479,6 +489,14 @@ p + p {
         margin-left: -72px; } }
   .modal__title {
     padding: 0 32px; }
+    .modal__title::before {
+      content: "";
+      width: 4px;
+      height: 40px;
+      background-color: #41F6D7;
+      left: 0;
+      border-radius: 0 4px 4px 0;
+      position: absolute; }
 
 .nav {
   overflow-x: hidden; }
@@ -522,7 +540,7 @@ p + p {
     white-space: nowrap;
     background-color: inherit;
     padding: 8px 16px; }
-  .nav__link:active, .nav__link--active {
+  .nav__link:active, .nav__link:hover, .nav__link--active {
     background-color: white;
     border: 2px solid #B8FFEC;
     border-radius: 4px;
@@ -651,9 +669,9 @@ p + p {
     @media (min-width: 768px) {
       .section__title {
         padding: 16px 24px; } }
-  .section__swiper-container, .section__swiper-container-d, .section__swiper-container-p {
+  .section__container, .section__container-d, .section__container-p {
     position: relative; }
-    .section__swiper-container::before, .section__swiper-container-d::before, .section__swiper-container-p::before {
+    .section__container::before, .section__container-d::before, .section__container-p::before {
       content: "";
       display: block;
       height: 80%;
@@ -664,7 +682,7 @@ p + p {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #F8F8F8 80%);
       z-index: 10; }
       @media (min-width: 768px) {
-        .section__swiper-container::before, .section__swiper-container-d::before, .section__swiper-container-p::before {
+        .section__container::before, .section__container-d::before, .section__container-p::before {
           display: none; } }
 
 .swiper-container,
@@ -1146,16 +1164,7 @@ button.swiper-pagination-bullet {
 .swiper-pagination {
   position: static; }
 
-.title__text::before {
-  content: "";
-  width: 4px;
-  height: 40px;
-  background-color: #41F6D7;
-  left: 0;
-  border-radius: 0 4px 4px 0;
-  position: absolute; }
-
-.title__text {
+.title {
   display: inline-block;
   font-size: 28px;
   line-height: 40px;
@@ -1725,6 +1734,27 @@ template {
  */
 [hidden] {
   display: none; }
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url(./fonts/TTLakes-Bold.eot);
+  src: local("/fonts/TT Lakes Bold"), local("./fonts/TTLakes-Bold"), url(./fonts/TTLakes-Bold.eot?#iefix) format("embedded-opentype"), url(./fonts/TTLakes-Bold.woff) format("woff"), url(./fonts/TTLakes-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url(./fonts/TTLakes-Regular.eot);
+  src: local("./fonts/TT Lakes Regular"), local("./fonts/TTLakes-Regular"), url(./fonts/TTLakes-Regular.eot?#iefix) format("./fonts/embedded-opentype"), url(./fonts/TTLakes-Regular.woff) format("woff"), url(./fonts/TTLakes-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url(./fonts/TTLakes-DemiBold.eot);
+  src: local("./fonts/TT Lakes DemiBold"), local("./fonts/TTLakes-DemiBold"), url(./fonts/TTLakes-DemiBold.eot?#iefix) format("embedded-opentype"), url(./fonts/TTLakes-DemiBold.woff) format("woff"), url(./fonts/TTLakes-DemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal; }
 
 
 /*# sourceMappingURL=style.css.map*/

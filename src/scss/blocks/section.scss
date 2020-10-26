@@ -23,9 +23,9 @@
     }
   }
 
-  &__swiper-container,
-  &__swiper-container-d,
-  &__swiper-container-p {
+  &__container,
+  &__container-d,
+  &__container-p {
     position: relative;
 
     &::before {

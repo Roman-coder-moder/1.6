@@ -52,6 +52,7 @@
   }
 
   &__link:active,
+  &__link:hover,
   &__link--active {
     background-color: white;
     border: 2px solid #B8FFEC;

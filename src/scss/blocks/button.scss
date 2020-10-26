@@ -69,7 +69,8 @@
   }
 
   &:hover {
-    opacity: 0.7;
-    transition: opacity 0.3s;
+    transform: translate(2px, -2px);
+    box-shadow: -2px 2px 0 0 #FF3E79;
+    transition: all 0.2s;
   }
 }

@@ -27,7 +27,7 @@ function closeModal () {
   modal.classList.remove('modal--feedback');
   overlay.classList.remove('overlay--on');
   overlay.removeEventListener('click', overlayClickHandler);
-  document.removeEventListener('keydown', overlayClickHandler);
+  document.removeEventListener('keydown', escapeKeyDownHandler);
   closeModalBtn.removeEventListener('click', closeMenuBtnClickHandler);
 }
 

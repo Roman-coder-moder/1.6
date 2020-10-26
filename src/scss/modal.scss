@@ -42,10 +42,9 @@
 
   &--open {
     display: flex;
-    left: calc(100% - 440px);
 
     @media (min-width: 768px) {
-
+      left: calc(100% - 440px);
     }
 
   }

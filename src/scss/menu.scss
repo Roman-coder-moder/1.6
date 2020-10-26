@@ -27,6 +27,7 @@
 
   &--open {
     visibility: visible;
+    position: fixed;
 
     .menu__interaction-list {
       position: absolute;

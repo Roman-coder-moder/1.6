@@ -2,6 +2,7 @@ const openMenuBtn = document.querySelector('.header__menu-btn');
 const menu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay--menu');
 const closeMenuBtn = document.querySelector('.menu__close-btn');
+const modal = document.querySelector('.modal');
 
 function openMenu () {
 
@@ -30,7 +31,7 @@ function overlayClickHandler() {
 }
 
 function escapeKeyDownHandler(evt) {
-  if (evt.key === 'Escape') {
+  if (evt.key === 'Escape' && !modal.classList.contains('modal--open')) {
     closeMenu();
   }
 }

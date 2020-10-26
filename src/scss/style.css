@@ -594,7 +594,11 @@ p + p {
 }
 .modal--open {
   display: flex;
-  left: calc(100% - 440px);
+}
+@media (min-width: 768px) {
+  .modal--open {
+    left: calc(100% - 440px);
+  }
 }
 .modal__close-btn {
   margin-left: 32px;
@@ -765,6 +769,12 @@ p + p {
 .overlay {
   width: 100%;
   height: 250%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .overlay {
+    display: block;
+  }
 }
 .overlay--on {
   position: absolute;
@@ -1404,19 +1414,9 @@ button.swiper-pagination-bullet {
   width: 4px;
   height: 40px;
   background-color: #41F6D7;
-  margin-left: -16px;
+  left: 0;
   border-radius: 0 4px 4px 0;
   position: absolute;
-}
-@media (min-width: 768px) {
-  .title__text::before {
-    margin-left: -24px;
-  }
-}
-@media (min-width: 1120px) {
-  .title__text::before {
-    margin-left: -32px;
-  }
 }
 .title__text {
   display: inline-block;
@@ -1636,6 +1636,7 @@ button.swiper-pagination-bullet {
 }
 .menu--open {
   visibility: visible;
+  position: fixed;
 }
 .menu--open .menu__interaction-list {
   position: absolute;
@@ -1690,7 +1691,7 @@ button.swiper-pagination-bullet {
   .menu__interaction-list {
     display: flex;
     left: 0;
-    top: 720px;
+    top: calc(100vh - 200px);
   }
 }
 .menu__mail {

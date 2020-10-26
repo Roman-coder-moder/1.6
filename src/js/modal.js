@@ -3,7 +3,7 @@ const openModalFeedbackBtn = document.querySelector('.interaction-list__feedback
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay--modal');
 const closeModalBtn = document.querySelector('.modal__close-btn');
-const modalTitle = document.querySelector('.modal__title .title__text')
+const modalTitle = document.querySelector('.modal__title')
 
 function openModalCall () {
   modal.classList.add('modal--call');

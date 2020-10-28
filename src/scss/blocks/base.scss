@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.html--fixed {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .body {
   font-family: "TT Lakes", "Times New Roman", sans-serif;
   min-width: 320px;
@@ -16,6 +21,11 @@ p {
 
 p + p {
   margin-top: 10px;
+}
+
+button,
+a:focus {
+  outline: none;
 }
 
 .visually-hidden {

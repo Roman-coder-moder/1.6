@@ -3,7 +3,8 @@ const openModalFeedbackBtn = document.querySelector('.interaction-list__feedback
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay--modal');
 const closeModalBtn = document.querySelector('.modal__close-btn');
-const modalTitle = document.querySelector('.modal__title')
+const modalTitle = document.querySelector('.modal__title');
+const html = document.querySelector('html');
 
 function openModalCall () {
   modal.classList.add('modal--call');
@@ -16,6 +17,7 @@ function openModalFeedBack () {
 function openModal () {
   modal.classList.add('modal--open');
   overlay.classList.add('overlay--on');
+  html.classList.add('html--fixed');
   overlay.addEventListener('click', overlayClickHandler);
   document.addEventListener('keydown', escapeKeyDownHandler);
   closeModalBtn.addEventListener('click', closeMenuBtnClickHandler);
@@ -26,6 +28,7 @@ function closeModal () {
   modal.classList.remove('modal--call');
   modal.classList.remove('modal--feedback');
   overlay.classList.remove('overlay--on');
+  html.classList.remove('html--fixed');
   overlay.removeEventListener('click', overlayClickHandler);
   document.removeEventListener('keydown', escapeKeyDownHandler);
   closeModalBtn.removeEventListener('click', closeMenuBtnClickHandler);
